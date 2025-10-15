@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>CSS Grid Practice</title>
+</head>
+
+<body style="padding-bottom: 1000px">
+
+  <div style=" display: grid; grid-template-columns: 100px 100px;
+  ">
+    <!-- CSS grids help structure the html. "grid-template-columns" has two values(100px 100 px) to define the columns -->
+
+    <div style="background-color: lightblue">div 1</div>
+    <div style="background-color: pink">div 2 <p> text</p>
+    </div>
+  </div>
+
+
+  <div style=" margin-top: 30px; display: grid; grid-template-columns: 100px 100px 200px;
+  ">
+    <!-- CSS grids help structure the html. "grid-template-columns" has two values(100px 100 px) to define the columns -->
+
+    <div style="background-color: lightblue">100 px</div>
+    <div style="background-color: pink">100 px <p> text</p>
+    </div>
+    <div style="background-color: lightblue">200 px</div>
+    <div style="background-color: pink">100 px</div>
+
+
+  </div>
+
+
+  <div style=" margin-top: 30px; 
+    display: grid; 
+    grid-template-columns: 100px 1fr;
+  ">
+    <!-- 
+     -CSS grids help structure the html. "grid-template-columns" has two values(100px 100 px) to define the columns 
+     - 1fr means it takes up the remaining amount of space
+    -->
+
+    <div style="background-color: lightblue">100px</div>
+    <div style="background-color: pink">1fr
+    </div>
+
+
+  </div>
+
+  <div style=" 
+  margin-top: 30px; 
+  display: grid; 
+  grid-template-columns: 100px 1fr 2fr;
+  ">
+    <!-- 
+     -CSS grids help structure the html. "grid-template-columns" has two values(100px 100 px) to define the columns 
+     - 1fr means it takes up the remaining amount of space
+    -->
+
+    <div style="background-color: lightblue">100 px</div>
+    <div style="background-color: pink">1fr
+    </div>
+    <div style="background-color: lightblue">2fr</div>
+
+
+  </div>
+
+
+
+  <div style=" margin-top: 30px; display: grid; 
+  grid-template-columns: 1fr 1fr 1fr; 
+  column-gap: 20px;
+  row-gap: 40px;">
+    <!-- 
+     -CSS grids help structure the html. "grid-template-columns" has two values(100px 100 px) to define the columns 
+     - 1fr means it takes up the remaining amount of space
+    -->
+
+    <div style="background-color: lightblue; height: 200px;">1fr</div>
+    <div style="background-color: pink; height: 200px;">1fr
+    </div>
+    <div style="background-color: lightblue; height: 200px;">1fr</div>
+    <div style="background-color: pink; height: 200px;">1fr
+    </div>
+    <div style="background-color: lightblue; height: 200px;">1fr</div>
+    <div style="background-color: pink; height: 200px;">1fr
+    </div>
+
+  </div>
+
+</body>
+
+</html>
+
+
+<!--
+-Style attribute (inline styles) let us write CSS code inside div
+
+-->

@@ -1,0 +1,13 @@
+p {
+  /* this is called font stack. Arial as a backup font incase Roboto doesn't load */
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+body {
+  margin: 0;
+  padding-top: 80px;
+  padding-left: 96px;
+  background-color: rgb(247, 246, 246);
+  font-family: Roboto, Arial;
+}

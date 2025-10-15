@@ -1,0 +1,36 @@
+.sidebar {
+  position: fixed;
+  top: 55px;
+  bottom: 0;
+  left: 0;
+  width: 75px;
+  z-index: 200;
+  background-color: white;
+  padding-top: 5px;
+}
+
+.sidebar-link {
+  height: 76px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.sidebar-link:hover {
+  background-color: rgb(233, 232, 232);
+  cursor: pointer;
+}
+
+.sidebar-link img {
+  height: 26px;
+}
+
+.sidebar-link div {
+  font-size: 10px;
+  margin-top: 2px;
+}
+
+/* This kinf of selector can let you edit a specific element
+inside an element*/

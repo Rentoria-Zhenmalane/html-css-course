@@ -1,0 +1,146 @@
+/*buttons.css*/
+.subscribe-button {
+  background-color: rgb(204, 0, 0);
+  /* the right is the CSS propert while the left is CSS Value */
+  color: white;
+  border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 16px;
+  padding-left: 16px;
+  border-radius: 2px;
+  cursor: pointer;
+  margin-left: 20px;
+  margin-right: 8px;
+  vertical-align: top;
+
+}
+
+.subscribe-button:hover {
+  background-color: rgb(255, 100, 100);
+  /*hover is a pseudo class that modifies the behavior of an element when you hover over it*/
+
+}
+
+.subscribe-button:active {
+  background-color: blueviolet;
+  /*active is a pseudo class that modifies the behavior of an element when you click on it*/
+
+}
+
+.join-button {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 144, 201);
+  border: 1px solid rgb(0, 144, 201);
+  border-radius: 2px;
+  cursor: pointer;
+  transition: background-color 0.15s,
+    color 0.15s;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-right: 16px;
+  padding-left: 16px;
+  /*transition property lets you animate changes to CSS properties over a duration of time*/
+}
+
+.join-button:hover {
+  background-color: rgb(0, 144, 201);
+  color: white;
+
+}
+
+.join-button:active {
+  opacity: 0.8;
+
+}
+
+.tweet-button {
+  background-color: rgb(0, 144, 201);
+  color: white;
+  border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 16px;
+  padding-left: 16px;
+  font-size: 15px;
+  border-radius: 20px;
+  margin-left: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: opacity 0.15s;
+  transition: box-shadow 0.15s;
+  vertical-align: top;
+
+  /*first-x axis, 2nd-y axis, last-opacity of shadow */
+  /*transition property lets you animate changes to CSS properties over a duration of time*/
+
+}
+
+.tweet-button:hover {
+  opacity: 0.8;
+  box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.15);
+}
+
+.tweet-button:active {
+  opacity: 0.4;
+}
+
+.uber-button {
+  background: black;
+  color: white;
+  border: 1px solid rgb(0, 0, 0);
+  height: 36px;
+  width: 120px;
+  margin-bottom: 30px;
+  margin-left: 20px;
+  transition: background-color 0.15s,
+    color 0.15s;
+
+}
+
+.uber-button:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid rgb(0, 0, 0);
+}
+
+.uber-button:active {
+  background-color: rgb(232, 231, 231);
+
+}
+
+
+
+.cart-button {
+  background: rgb(255, 216, 20);
+  color: black;
+  border: none;
+  height: 30px;
+  width: 140px;
+  margin-bottom: 30px;
+  margin-left: 20px;
+  border-radius: 30px;
+}
+
+.cart-button:hover {
+  opacity: 0.7;
+}
+
+.cart-button:active {
+  background-color: rgb(255, 216, 20);
+  opacity: 1;
+
+}
+
+.apply-button {
+  background: rgb(10, 102, 194);
+  color: #ffffff;
+  border: none;
+  height: 36;
+  width: 210px;
+  border-radius: 40px;
+  font-weight: bold;
+  cursor: pointer;
+
+
+}

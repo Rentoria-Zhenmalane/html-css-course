@@ -1,0 +1,195 @@
+/* * {
+  outline: 1px solid limegreen;
+}
+This line of code is used to debug the layout by outlining every element with a limegreen border.
+*/
+.header {
+  height: 55px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: white;
+
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(212, 212, 212);
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.left-section {
+  align-items: center;
+  display: flex;
+}
+
+/*
+Flexbox doesn't work on nested techniques. That's why we need to convert left-section into a flexbox
+so the align-items could work. 
+*/
+
+.middle-section {
+  flex: 1;
+  margin-left: 70px;
+  margin-right: 35px;
+  max-width: 500px;
+
+  display: flex;
+  align-items: center;
+
+  /* this property says that width can be less than 300px, but not more than 300px  */
+
+}
+
+.right-section {
+  width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 20px;
+  flex-shrink: 0;
+  /* Flexbox special property to avoid shrinking of elements when website is resizing*/
+}
+
+.hamburger-menu {
+  height: 24px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.youtube-logo {
+  height: 24px;
+}
+
+.search-button {
+  height: 39px;
+  width: 60px;
+  background-color: rgb(245, 244, 244);
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(197, 197, 197);
+  margin-left: -1px;
+  /* negative numbers pull the margin to the left, right, top, or bottom.*/
+  margin-right: 10px;
+}
+
+.search-button,
+.voice-search-button,
+.upload-icon-container,
+.notifications-icon-container,
+.youtube-apps-icon-container {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.search-button .tooltip,
+.voice-search-button .tooltip,
+.upload-icon-container .tooltip,
+.notifications-icon-container .tooltip,
+.youtube-apps-icon-container .tooltip {
+  position: absolute;
+  background-color: gray;
+  color: white;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  font-size: 12px;
+  font-family: roboto, arial;
+  bottom: -35px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  white-space: nowrap;
+
+}
+
+.search-button:hover .tooltip,
+.voice-search-button:hover .tooltip,
+.upload-icon-container:hover .tooltip,
+.notifications-icon-container:hover .tooltip,
+.youtube-apps-icon-container:hover .tooltip {
+  opacity: 1;
+}
+
+.search-bar {
+  flex: 1;
+  height: 36px;
+  padding-left: 10px;
+  font-size: 16px;
+  border: 1px solid rgb(197, 197, 197);
+  border-radius: 2px;
+  box-shadow: inset 1px 2px 2px rgba(0, 0, 0, 0.05);
+  width: 0;
+  /* To shrink the search bar when resizing windows*/
+}
+
+.search-bar::placeholder {
+  /* This is called a pseudoclass to target a specific class inside an element*/
+  font-size: 16px;
+}
+
+.search-icon {
+  height: 25px;
+}
+
+.voice-search-icon {
+  height: 24px;
+}
+
+.voice-search-button {
+  border-radius: 20px;
+  border: none;
+  height: 40px;
+  width: 40px;
+  background-color: rgb(247, 245, 245);
+}
+
+.upload-icon {
+  height: 24px;
+}
+
+.youtube-apps-icon {
+  height: 24px;
+}
+
+.notifications-icon {
+  height: 24px;
+
+}
+
+
+.notifications-count {
+  position: absolute;
+  top: 0;
+  right: -3px;
+  background-color: rgb(206, 0, 0);
+  color: white;
+  font-size: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 2px;
+  padding-top: 2px;
+  border-radius: 10px;
+
+
+}
+
+.current-user-icon {
+  height: 30px;
+  border-radius: 14px;
+}
+
+
+
+/* 
+-Use flexbox to spread content size evenly on horizontal space
+- Use grid to create grid
+- For nested layout techniques, you can use either Flexbox or Grid
+
+*/
