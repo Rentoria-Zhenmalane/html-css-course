@@ -14,7 +14,7 @@ This line of code is used to debug the layout by outlining every element with a 
   border-bottom-style: solid;
   border-bottom-color: rgb(212, 212, 212);
 
-  position: fixed;
+  position: fixed; /*removes the header from normal layout */
   top: 0;
   left: 0;
   right: 0;
@@ -86,6 +86,11 @@ so the align-items could work.
   align-items: center;
   display: flex;
 }
+
+
+/* 
+Put position absolute inside position relative to create tootip.
+*/
 
 .search-button .tooltip,
 .voice-search-button .tooltip,
